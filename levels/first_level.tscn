@@ -8,6 +8,7 @@
 
 [node name="floor border" type="StaticBody2D" parent="." unique_id=2027183869]
 position = Vector2(-1, 93)
+scale = Vector2(1, 0.99318767)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor border" unique_id=236623749]
 shape = SubResource("WorldBoundaryShape2D_ccbq8")
