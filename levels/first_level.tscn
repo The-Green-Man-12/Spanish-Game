@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dhl6kqa6ovime"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ccbq8"]
+
+[node name="First Level" type="Node2D" unique_id=55513208]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2027183869]
+position = Vector2(-1, 93)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=236623749]
+shape = SubResource("WorldBoundaryShape2D_ccbq8")
