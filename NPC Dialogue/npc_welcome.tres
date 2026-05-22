@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://c8w5d34bvq6p5"]
+
+[ext_resource type="Texture2D" uid="uid://dc72wivbx6uhm" path="res://icon.svg" id="1_735h5"]
+[ext_resource type="Script" uid="uid://b8fq07ckl86ql" path="res://dialogue/dialogue.gd" id="1_y5fwq"]
+
+[resource]
+script = ExtResource("1_y5fwq")
+npc_name = "Guy"
+npc_icon = ExtResource("1_735h5")
+lines = Array[String](["Hello, welcome to this lil village"])
+metadata/_custom_type_script = "uid://b8fq07ckl86ql"

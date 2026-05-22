@@ -1,3 +1,4 @@
 res://levels/first_level.tscn
+res://dialogue/dialogue.gd
 res://player.tscn
-res://character_body_2d.gd
+res://NPC Dialogue/npc_welcome.tres

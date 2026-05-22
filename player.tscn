@@ -1,10 +1,21 @@
 [gd_scene format=3 uid="uid://ca14qh6x4d7y4"]
 
 [ext_resource type="Script" uid="uid://djew870rb4s1m" path="res://character_body_2d.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dc72wivbx6uhm" path="res://icon.svg" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_i3pqv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4flbx"]
+bg_color = Color(0, 0, 0, 0.5058824)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_onrkg"]
+bg_color = Color(0.62677854, 0.4474492, 0.2755595, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_i3pqv"]
+font_size = 4
+font_color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody2D" unique_id=944430909]
 script = ExtResource("1_4flbx")
@@ -15,3 +26,70 @@ shape = SubResource("RectangleShape2D_onrkg")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1596796197]
 scale = Vector2(19.84, 20)
 texture = SubResource("PlaceholderTexture2D_i3pqv")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=2023035836]
+
+[node name="DialogueScreen" type="Panel" parent="HUD" unique_id=1829463541]
+offset_left = -38.0
+offset_top = -71.0
+offset_right = 38.0
+offset_bottom = -31.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4flbx")
+
+[node name="DialoguePanel" type="Panel" parent="HUD/DialogueScreen" unique_id=1125878575]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = -40.0
+offset_right = 38.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_onrkg")
+
+[node name="BG" type="Panel" parent="HUD/DialogueScreen/DialoguePanel" unique_id=1796622091]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -20.0
+offset_right = 38.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_onrkg")
+
+[node name="Icon" type="TextureRect" parent="HUD/DialogueScreen/DialoguePanel" unique_id=1550873899]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 16.0
+grow_vertical = 2
+texture = ExtResource("2_onrkg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NPCName" type="Label" parent="HUD/DialogueScreen/DialoguePanel" unique_id=708808108]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 1.0
+offset_right = 59.0
+offset_bottom = 9.0
+text = "NPC Name"
+label_settings = SubResource("LabelSettings_i3pqv")
+
+[node name="NPCName2" type="Label" parent="HUD/DialogueScreen/DialoguePanel" unique_id=1783736799]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 15.0
+offset_right = 75.0
+offset_bottom = 39.0
+text = "Dialogue"
+label_settings = SubResource("LabelSettings_i3pqv")

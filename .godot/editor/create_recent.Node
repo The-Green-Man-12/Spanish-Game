@@ -1,5 +1,11 @@
-Camera2D
+Label
+TextureRect
+Panel
+CanvasLayer
+RigidBody2D
 CollisionShape2D
+TileMapLayer
+Camera2D
 Sprite2D
 CharacterBody2D
 StaticBody2D
