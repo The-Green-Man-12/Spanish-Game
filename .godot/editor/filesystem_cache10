@@ -1,9 +1,19 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779453669
+::res://::1779885187
 character_body_2d.gd::GDScript::7800615580019772576::1779196293::0::1::::<>CharacterBody2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7367378925460989842::1779195796::1779195862::1::::<><><>0<>0<>79010be9df17153af0cb9f1c4d480594<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-player.tscn::PackedScene::4828304971120774229::1779196293::0::1::::<><><>0<>0<><>::uid://djew870rb4s1m::::res://character_body_2d.gd
-::res://enemies/::1779196073
-::res://levels/::1779454096
-first_level.tscn::PackedScene::7675193038356640932::1779454096::0::1::::<><><>0<>0<><>::uid://ca14qh6x4d7y4::::res://player.tscn<>uid://dc72wivbx6uhm::::res://icon.svg
+player.tscn::PackedScene::4828304971120774229::1779455876::0::1::::<><><>0<>0<><>::uid://djew870rb4s1m::::res://character_body_2d.gd<>uid://dc72wivbx6uhm::::res://icon.svg
+::res://art/::1779886164
+parts.jpg::CompressedTexture2D::1951573818489365698::1779886164::1779886165::1::::<><><>0<>0<>a1c1ad53dea2766d144ba7c7f18795f7<>res://.godot/imported/parts.jpg-73d002ffb3798d0eb0e3d9b655be8b97.ctex::
+part_1.jpg::CompressedTexture2D::6839423633062823014::1779885212::1779885214::1::::<><><>0<>0<>544a69b13b36976d405af0680282c584<>res://.godot/imported/part_1.jpg-e37b474abebfdd4eddbba0f5387cf140.ctex::
+part_2.jpg::CompressedTexture2D::422604778092018043::1779885217::1779885218::1::::<><><>0<>0<>af6219285e5e0ab4505c4bb383bbf36a<>res://.godot/imported/part_2.jpg-1e25099c87035c9166192106c58f74f9.ctex::
+some_part.jpg::CompressedTexture2D::8015767175392640884::1779885220::1779885221::1::::<><><>0<>0<>c19223630fb184175dc0cf0840239cf0<>res://.godot/imported/some_part.jpg-5fc56170ff81561612e57299e02d85ba.ctex::
+::res://dialogue/::1779454602
+dialogue.gd::GDScript::4713992213557555231::1779454602::0::1::::Dialogue<>Resource<><>0<>0<><>::
+::res://levels/::1779885868
+first_level.tscn::PackedScene::7675193038356640932::1779885763::0::1::::<><><>0<>0<><>::uid://ca14qh6x4d7y4::::res://player.tscn<>uid://c4pckqbao2xas::::res://art/part_1.jpg<>uid://dc72wivbx6uhm::::res://icon.svg<>uid://btioi0cr3glff::::res://levels/camera_2d.gd
+camera_2d.gd::GDScript::3737389376081594987::1779885868::0::1::::<>Camera2D<><>0<>0<><>::
+::res://NPC Dialogue/::1779454932
+npc_welcome.tres::Resource/Dialogue::7136317900722590280::1779454932::0::1::::<><><>0<>0<><>::uid://dc72wivbx6uhm::::res://icon.svg<>uid://b8fq07ckl86ql::::res://dialogue/dialogue.gd
+::res://npcs/::1779196073
 ::res://objects/::1779195931

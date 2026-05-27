@@ -1,4 +1,2 @@
 res://levels/first_level.tscn
-res://dialogue/dialogue.gd
-res://player.tscn
-res://NPC Dialogue/npc_welcome.tres
+res://levels/camera_2d.gd
