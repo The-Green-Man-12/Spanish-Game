@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dhl6kqa6ovime"]
 
 [ext_resource type="PackedScene" uid="uid://ca14qh6x4d7y4" path="res://player.tscn" id="1_1uo7f"]
+[ext_resource type="Texture2D" uid="uid://dmg5rqqq11f8o" path="res://art/some_part.jpg" id="1_uxbwj"]
 [ext_resource type="Texture2D" uid="uid://dc72wivbx6uhm" path="res://icon.svg" id="2_5vond"]
 [ext_resource type="Script" uid="uid://btioi0cr3glff" path="res://levels/camera_2d.gd" id="3_uxbwj"]
 
@@ -112,6 +113,10 @@ sources/1 = SubResource("TileSetAtlasSource_byesk")
 position = Vector2(670.99994, 2.0000002)
 scale = Vector2(2.4720423, 2.162428)
 texture = SubResource("CompressedTexture2D_byesk")
+
+[node name="Sprite2D2" type="Sprite2D" parent="backgrounds" unique_id=1006465258]
+position = Vector2(2624, 0)
+texture = ExtResource("1_uxbwj")
 
 [node name="floor border" type="StaticBody2D" parent="." unique_id=2027183869]
 position = Vector2(-1, 93)
